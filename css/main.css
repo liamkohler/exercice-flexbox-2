@@ -1,17 +1,9 @@
-/* ====================================
-// css variables
-// ==================================== */
-
 :root {
   --beige: #ebead2;
   --grey: #979797;
   --white: #fff;
   --black: #000;
 }
-
-/* ====================================
-// reset rules
-// ==================================== */
 
 * {
   box-sizing: border-box;
@@ -43,6 +35,43 @@ video {
   vertical-align: middle;
 }
 
-/* ====================================
-// base rules
-// ==================================== */
+.section {
+  background-color: var(--beige);
+  display: flex;
+  margin: 15px;
+}
+
+.box {
+  background-color: var(--white);
+  color: var(--black);
+  border: solid var(--grey) 1px;
+  font-family: "Lato", sans-serif;
+  font-size: 50px;
+  line-height: 75px;
+  margin: 15px 0;
+  padding: 0 15px;
+}
+
+.section-3 .box,
+.section-4 .box,
+.section-5 .box {
+  margin: 15px;
+}
+
+.section-1 {
+}
+
+.section-2 {
+  flex-wrap: wrap;
+}
+
+.section-3 {
+  justify-content: center;
+}
+
+.section-4 {
+}
+
+.section-5 {
+  justify-content: flex-end;
+}
